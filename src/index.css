@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -99,5 +100,46 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Animated gradient background */
+  @keyframes gradient-xy {
+    0%, 100% {
+      background-size: 400% 400%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+
+  .animate-gradient-xy {
+    animation: gradient-xy 15s ease infinite;
+  }
+
+  /* Noise texture */
+  .bg-noise {
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,.15) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
+  /* Glass card effect */
+  .glass-card {
+    @apply backdrop-blur-sm bg-card/80 border border-border/50 shadow-lg;
+  }
+
+  /* Hover effects */
+  .glass-card:hover {
+    @apply bg-card/90 border-border/70 shadow-xl transition-all duration-300;
+  }
+
+  /* Dark mode noise adjustment */
+  .dark .bg-noise {
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1px, transparent 0);
   }
 }

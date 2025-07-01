@@ -234,7 +234,7 @@ const Index = () => {
                   </p>
                   <div className="mt-3 p-3 bg-gray-800/50 rounded border-l-4 border-blue-500">
                     <p className="text-blue-400 text-sm font-medium">
-                      Важно: Мощность электродвигателя НЕ является определяющим критерием до превышения конструктивной скорости 25 км/ч согласно ПДД п.1.2 и ГОСТ Р 70514-2022.
+                      Важно: Мощность электродвигателя НЕ является определяющим критерием до превышения конструктивной скорости 25 км/ч согласно ПДД п.1.2 и ГОСТ Р 70514-2022. Также разгон >25 километров в час который достигается за счёт, например, съезда с горки не идёт в счёт классификации транспортного средства.
                     </p>
                   </div>
                 </div>
@@ -257,7 +257,7 @@ const Index = () => {
                   Версия (у меня)
                 </h4>
                 <ul className="space-y-2 text-sm text-gray-300">
-                  <li>• Макс. скорость: 25 км/ч</li>
+                  <li>• Макс. скорость из коробки: 25 км/ч</li>
                   <li>• Соответствует ПДД РФ</li>
                   <li>• Является СИМ</li>
                   <li>• Права НЕ нужны</li>
@@ -270,10 +270,10 @@ const Index = () => {
                   US/CN версии (у меня НЕ такие)
                 </h4>
                 <ul className="space-y-2 text-sm text-gray-300">
-                  <li>• Макс. скорость: 30+ км/ч</li>
+                  <li>• Макс. скорость: 32+ км/ч</li>
                   <li>• НЕ соответствует ПДД РФ</li>
                   <li>• Считается мопедом</li>
-                  <li>• Нужны права категории M</li>
+                  <li>• Нужны права категории M * </li>
                   <li>• Регистрация, шлем, по дороге</li>
                 </ul>
               </div>
@@ -439,12 +439,33 @@ const Index = () => {
                   <Button variant="outline" size="sm" asChild className="border-green-500 text-green-400 hover:bg-green-500/10">
                     <a href="https://cdn.vseinstrumenti.ru/img/certificate_compliance/2077557/432608.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                       <ExternalLink className="h-4 w-4" />
-                      Посмотреть декларацию (PDF)
+                      Посмотреть декларацию 1 (PDF)
                     </a>
                   </Button>
                 </div>
               </div>
             </div>
+
+            <div className="p-4 bg-cyan-950/30 rounded-lg border border-cyan-500/30">
+              <div className="flex items-start gap-3">
+                <Scale className="h-5 w-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-cyan-400 mb-2 text-base">
+                    Исключение из ТР ТС 018/2011
+                  </h4>
+                  <p className="text-cyan-300 text-sm mb-3">
+                    Официальное подтверждение: данный электросамокат не подлежит сертификации по регламенту ТР ТС 018/2011, а значит не может считаться мопедом.
+                  </p>
+                  <Button variant="outline" size="sm" asChild className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10">
+                    <a href="/documents/declaration.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                      <ExternalLink className="h-4 w-4" />
+                      Открыть подтверждающий документ (PDF)
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
           </CardContent>
         </Card>
 
@@ -471,7 +492,7 @@ const Index = () => {
 
         {/* Footer */}
         <div className="text-center mt-12 space-y-2">
-          <p className="text-sm text-gray-400">Апрель 2025 • Памятка о правовом статусе электросамокатов</p>
+          <p className="text-sm text-gray-400">Июль 2025 • Памятка о правовом статусе электросамокатов</p>
           <p className="text-xs text-gray-500">
             ⚠️ Информация носит ознакомительный характер. Могут присутствовать юридические несоответствия и неточности. 
             Для получения точной правовой консультации обращайтесь к специалистам.

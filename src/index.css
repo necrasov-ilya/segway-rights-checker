@@ -97,17 +97,14 @@
 }
 
 @layer utilities {
-  /* Smooth transitions for interactive elements */
   .hover-scale {
     @apply transition-transform duration-200 hover:scale-105;
   }
 
-  /* Custom backdrop blur effect */
   .backdrop-blur-custom {
     backdrop-filter: blur(8px);
   }
 
-  /* Red accent glow effect */
   .red-glow {
     box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
   }

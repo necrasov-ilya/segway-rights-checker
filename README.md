@@ -1,74 +1,45 @@
-# Welcome to your Lovable project
+# Segway Rights Checker
 
-## Project info
+Интерактивная памятка для владельцев электросамоката Segway Ninebot ZT3 Pro и аналогичных устройств. Сервис помогает быстро определить, нужны ли водительские права и регистрация для конкретной модели самоката в России, а также предоставляет ссылки на нормативные документы и официальные источники.
 
-**URL**: https://lovable.dev/projects/8545c34a-5983-42d1-bbba-f10b052c57e5
+## Основные возможности
 
-## How can I edit this code?
+- Краткий юридический ответ: нужны ли права на ваш самокат
+- Визуальные доказательства (шильдик, скриншоты приложения, официальные характеристики)
+- Подробная правовая логика и выдержки из ПДД, ГОСТ и ТР ТС
+- Ссылки на официальные документы и сайты
+- Контактная информация владельца
 
-There are several ways of editing your application.
+## Технологии
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/8545c34a-5983-42d1-bbba-f10b052c57e5) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+- React + TypeScript
 - Tailwind CSS
+- Vite
 
-## How can I deploy this project?
+## Как запустить проект локально
 
-Simply open [Lovable](https://lovable.dev/projects/8545c34a-5983-42d1-bbba-f10b052c57e5) and click on Share -> Publish.
+1. Клонируйте репозиторий:
+   ```sh
+   git clone <URL_ВАШЕГО_РЕПОЗИТОРИЯ>
+   cd segway-rights-checker
+   ```
+2. Установите зависимости:
+   ```sh
+   npm install
+   ```
+3. Запустите локальный сервер:
+   ```sh
+   npm run dev
+   ```
+4. Откройте [http://localhost:5173](http://localhost:5173) в браузере.
 
-## Can I connect a custom domain to my Lovable project?
+## Полезные ссылки
 
-Yes, you can!
+- [ПДД РФ, п.1.2](https://www.consultant.ru/document/cons_doc_LAW_2709/5894b193fda5648afe1c1a5e70c028f25cd29099/)
+- [ГОСТ Р 70514-2022](https://docs.cntd.ru/document/1200194451)
+- [ТР ТС 018/2011](https://www.novotest.ru/upload/medialibrary/a18/TR_TS_018_.pdf)
+- [Официальный сайт Segway ZT3 Pro](https://www.segway.com/ekickscooter/products/zt3-pro.html)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Дисклеймер
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-
+Информация на сайте носит ознакомительный характер и не является юридической консультацией. Для получения точных разъяснений обращайтесь к профильным специалистам.

@@ -31,8 +31,7 @@
    ```sh
    npm run dev
    ```
-4. Откройте [http://localhost:5173](http://localhost:5173) в браузере или воспользуйтесь публичной копией по следующей ссылке
-   http://localhost:8081/segway-rights-checker/.
+4. Откройте [http://localhost:5173](http://localhost:5173) в браузере или воспользуйтесь [публичной копией](https://necrasov-ilya.github.io/segway-rights-checker/)
 
 ## Полезные ссылки
 

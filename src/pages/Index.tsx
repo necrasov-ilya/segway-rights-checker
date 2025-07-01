@@ -9,7 +9,6 @@ const Index = () => {
   const basePath = import.meta.env.BASE_URL || '';
 
   useEffect(() => {
-    // Apply system theme automatically
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const applyTheme = (e: MediaQueryList | MediaQueryListEvent) => {
       if (e.matches) {

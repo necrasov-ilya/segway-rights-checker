@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -7,6 +6,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { ExternalLink, CheckCircle, XCircle, AlertCircle, ZoomIn, FileText, Smartphone, Scale } from 'lucide-react';
 
 const Index = () => {
+  const basePath = import.meta.env.BASE_URL || '';
+
   useEffect(() => {
     // Apply system theme automatically
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -43,8 +44,8 @@ const Index = () => {
                 
                 {/* Main image with enhanced styling */}
                 <img 
-                  src="/lovable-uploads/bffd8948-15f5-4d83-958e-abad6866dc64.png" 
-                  alt="Segway Ninebot ZT3 Pro" 
+                  src={`${basePath}lovable-uploads/bffd8948-15f5-4d83-958e-abad6866dc64.png`}
+                  alt="Segway Ninebot ZT3 Pro"
                   className="relative z-10 h-80 object-contain border-4 border-red-500 rounded-2xl bg-gray-800/50 backdrop-blur-sm p-4 shadow-2xl shadow-red-500/20"
                 />
                 
@@ -111,8 +112,8 @@ const Index = () => {
               </DialogHeader>
               <div className="space-y-4">
                 <img 
-                  src="/lovable-uploads/1b6c282f-3b1a-4fa5-a273-67a213dc4af2.png" 
-                  alt="Шильдик Segway ZT3 Pro" 
+                  src={`${basePath}lovable-uploads/1b6c282f-3b1a-4fa5-a273-67a213dc4af2.png`}
+                  alt="Шильдик Segway ZT3 Pro"
                   className="w-full rounded-lg max-h-96 object-contain mx-auto"
                 />
                 <div className="grid sm:grid-cols-2 gap-4 text-sm">
@@ -177,8 +178,8 @@ const Index = () => {
               </DialogHeader>
               <div className="text-center space-y-4">
                 <img 
-                  src="/lovable-uploads/868e3238-a490-4a8b-905b-a33602ab0469.png" 
-                  alt="Настройки приложения" 
+                  src={`${basePath}lovable-uploads/868e3238-a490-4a8b-905b-a33602ab0469.png`}
+                  alt="Настройки приложения"
                   className="max-w-full max-h-96 mx-auto rounded-lg object-contain"
                 />
                 <p className="text-gray-300 text-base">
@@ -219,8 +220,8 @@ const Index = () => {
               </DialogHeader>
               <div className="space-y-4">
                 <img 
-                  src="/lovable-uploads/1877a911-3f4f-4aa8-b873-33cd30e17423.png" 
-                  alt="Логическая цепочка перехода СИМ в мопед" 
+                  src={`${basePath}lovable-uploads/1877a911-3f4f-4aa8-b873-33cd30e17423.png`}
+                  alt="Логическая цепочка перехода СИМ в мопед"
                   className="w-full rounded-lg max-h-96 object-contain mx-auto"
                 />
                 <div className="p-4 bg-red-950/30 rounded-lg border border-red-500/30">
@@ -234,7 +235,7 @@ const Index = () => {
                   </p>
                   <div className="mt-3 p-3 bg-gray-800/50 rounded border-l-4 border-blue-500">
                     <p className="text-blue-400 text-sm font-medium">
-                      Важно: Мощность электродвигателя НЕ является определяющим критерием до превышения конструктивной скорости 25 км/ч согласно ПДД п.1.2 и ГОСТ Р 70514-2022. Также разгон >25 километров в час который достигается за счёт, например, съезда с горки не идёт в счёт классификации транспортного средства.
+                      Важно: Мощность электродвигателя НЕ является определяющим критерием до превышения конструктивной скорости 25 км/ч согласно ПДД п.1.2 и ГОСТ Р 70514-2022. Также разгон &gt;25 километров в час который достигается за счёт, например, съезда с горки не идёт в счёт классификации транспортного средства.
                     </p>
                   </div>
                 </div>
@@ -457,7 +458,7 @@ const Index = () => {
                     Официальное подтверждение: данный электросамокат не подлежит сертификации по регламенту ТР ТС 018/2011, а значит не может считаться мопедом.
                   </p>
                   <Button variant="outline" size="sm" asChild className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10">
-                    <a href="/documents/declaration.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                    <a href={`${basePath}documents/declaration.pdf`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                       <ExternalLink className="h-4 w-4" />
                       Открыть подтверждающий документ (PDF)
                     </a>

@@ -43,7 +43,7 @@ const Index = () => {
                 
                 {/* Main image with enhanced styling */}
                 <img 
-                  src={`${basePath}lovable-uploads/bffd8948-15f5-4d83-958e-abad6866dc64.png`}
+                  src={basePath + "uploads/bffd8948-15f5-4d83-958e-abad6866dc64.png"}
                   alt="Segway Ninebot ZT3 Pro"
                   className="relative z-10 h-80 object-contain border-4 border-red-500 rounded-2xl bg-gray-800/50 backdrop-blur-sm p-4 shadow-2xl shadow-red-500/20"
                 />
@@ -111,7 +111,7 @@ const Index = () => {
               </DialogHeader>
               <div className="space-y-4">
                 <img 
-                  src={`${basePath}lovable-uploads/1b6c282f-3b1a-4fa5-a273-67a213dc4af2.png`}
+                  src={basePath + "uploads/1b6c282f-3b1a-4fa5-a273-67a213dc4af2.png"}
                   alt="Шильдик Segway ZT3 Pro"
                   className="w-full rounded-lg max-h-96 object-contain mx-auto"
                 />
@@ -177,7 +177,7 @@ const Index = () => {
               </DialogHeader>
               <div className="text-center space-y-4">
                 <img 
-                  src={`${basePath}lovable-uploads/868e3238-a490-4a8b-905b-a33602ab0469.png`}
+                  src={basePath + "uploads/868e3238-a490-4a8b-905b-a33602ab0469.png"}
                   alt="Настройки приложения"
                   className="max-w-full max-h-96 mx-auto rounded-lg object-contain"
                 />
@@ -219,7 +219,7 @@ const Index = () => {
               </DialogHeader>
               <div className="space-y-4">
                 <img 
-                  src={`${basePath}lovable-uploads/1877a911-3f4f-4aa8-b873-33cd30e17423.png`}
+                  src={basePath + "uploads/1877a911-3f4f-4aa8-b873-33cd30e17423.png"}
                   alt="Логическая цепочка перехода СИМ в мопед"
                   className="w-full rounded-lg max-h-96 object-contain mx-auto"
                 />

@@ -459,7 +459,7 @@ const Index = () => {
                   <Button variant="outline" size="sm" asChild className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10">
                     <a href={`${basePath}documents/declaration.pdf`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                       <ExternalLink className="h-4 w-4" />
-                      Открыть подтверждающий документ (PDF)
+                      Открыть документ (PDF)
                     </a>
                   </Button>
                 </div>

@@ -490,6 +490,41 @@ const Index = () => {
           </CardContent>
         </Card>
 
+        {/* Linguistic Analysis Section */}
+        <Card className="mb-12 bg-gray-800/50 border-gray-700 shadow-2xl backdrop-blur-sm">
+          <CardHeader>
+            <CardTitle className="text-red-500 text-2xl">Лингвистический анализ термина EKickScooter</CardTitle>
+            <CardDescription className="text-gray-400">Разбор значения и структуры слова</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="p-6 bg-gray-700/50 rounded-lg border border-gray-600">
+              <p className="text-gray-300 text-base leading-relaxed">
+                Термин <span className="text-red-500 font-semibold">EKickScooter</span> состоит из трёх частей:
+              </p>
+              <ul className="list-disc list-inside text-gray-300 text-base mt-4 mb-4">
+                <li>
+                  <span className="text-green-400 font-semibold">E</span> — сокращение от слова
+                  <span className="text-green-400 font-semibold"> «Electric»</span>, что указывает на электрическую природу устройства.
+                </li>
+                <li>
+                  <span className="text-yellow-400 font-semibold">Kick</span> — подчёркивает необходимость отталкиваться ногой,
+                  что отличает самокаты от скутеров (мопедов).
+                </li>
+                <li>
+                  <span className="text-blue-400 font-semibold">Scooter</span> — используется в английском языке как для обозначения мопедов, так и самокатов.
+                  Однако добавление слова <span className="text-yellow-400 font-semibold">Kick</span> чётко разделяет эти два термина,
+                  указывая, что речь идёт именно о самокатах.
+                </li>
+              </ul>
+              <p className="text-gray-300 text-base leading-relaxed">
+                Таким образом, <span className="text-red-500 font-semibold">EKickScooter</span> дословно переводится как
+                <span className="text-green-400 font-semibold"> «Электрический Самокат»</span>, что подчёркивает его конструктивные особенности
+                и отличия от других транспортных средств.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Contact Info */}
         <Card className="bg-gray-800/50 border-2 border-red-500 shadow-2xl backdrop-blur-sm">
           <CardHeader>

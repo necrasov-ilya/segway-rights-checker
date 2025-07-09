@@ -469,26 +469,6 @@ const Index = () => {
           </CardContent>
         </Card>
 
-        {/* EKickScooter Translation Section */}
-        <Card className="mb-12 bg-gray-800/50 border-gray-700 shadow-2xl backdrop-blur-sm">
-          <CardHeader>
-            <CardTitle className="text-red-500 text-2xl">Перевод EKickScooter</CardTitle>
-            <CardDescription className="text-gray-400">Объяснение термина</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="p-6 bg-gray-700/50 rounded-lg border border-gray-600">
-              <p className="text-gray-300 text-base leading-relaxed">
-                Термин <span className="text-red-500 font-semibold">EKickScooter</span> переводится как 
-                <span className="text-green-400 font-semibold"> «Электрический Самокат»</span>. 
-                Слово <span className="text-yellow-400 font-semibold">Kick</span> указывает на необходимость отталкиваться ногой, 
-                что отличает самокаты от скутеров (мопедов). 
-                <span className="text-blue-400 font-semibold"> Scooter</span> используется в английском языке как для обозначения мопедов, так и самокатов,
-                но добавление слова <span className="text-yellow-400 font-semibold">Kick</span> чётко разделяет эти два термина, 
-                подчёркивая, что речь идёт именно о самокатах, оснащённых электрическим двигателем.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
 
         {/* Linguistic Analysis Section */}
         <Card className="mb-12 bg-gray-800/50 border-gray-700 shadow-2xl backdrop-blur-sm">

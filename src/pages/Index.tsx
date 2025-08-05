@@ -466,6 +466,45 @@ const Index = () => {
               </div>
             </div>
 
+            <div className="p-4 bg-blue-950/30 rounded-lg border border-blue-500/30">
+              <div className="flex items-start gap-3">
+                <FileText className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-blue-400 mb-2 text-base">
+                    Ответ Минтранса России (Д3/2582-ПГ)
+                  </h4>
+                  <p className="text-blue-300 text-sm mb-3">
+                    Официальный ответ Министерства транспорта Российской Федерации по вопросу соответствия электросамокатов транспортным средствам, определяемым ПДД как «мопед».
+                  </p>
+                  <Button variant="outline" size="sm" asChild className="border-blue-500 text-blue-400 hover:bg-blue-500/10">
+                    <a href={`${basePath}documents/Д3∕2582-ПГ_17.07.2025_по вопросу соответствия электросамоката транспортным средствам, определяемым ПДД как «мопед», «средство индивидуальн-1.pdf`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                      <ExternalLink className="h-4 w-4" />
+                      Открыть документ (PDF)
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 bg-purple-950/30 rounded-lg border border-purple-500/30">
+              <div className="flex items-start gap-3">
+                <Scale className="h-5 w-5 text-purple-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-purple-400 mb-2 text-base">
+                    Ответ ГУОБДД МВД России
+                  </h4>
+                  <p className="text-purple-300 text-sm mb-3">
+                    Официальный ответ Главного управления по обеспечению безопасности дорожного движения МВД России по вопросам регулирования электросамокатов.
+                  </p>
+                  <Button variant="outline" size="sm" asChild className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
+                    <a href={`${basePath}documents/ответ_некрасов_з257716673572.pdf`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                      <ExternalLink className="h-4 w-4" />
+                      Открыть документ (PDF)
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
           </CardContent>
         </Card>
 

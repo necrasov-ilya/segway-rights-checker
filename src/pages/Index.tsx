@@ -25,7 +25,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-slate-950 text-slate-100">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <div className="text-center mb-16">
@@ -35,49 +35,46 @@ const Index = () => {
               <div className="relative p-12">
                 {/* Geometric background elements */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-96 h-96 rounded-full border-4 border-red-500/20"></div>
+                  <div className="w-96 h-96 rounded-full border-4 border-indigo-500/20"></div>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-80 h-80 rounded-full border-2 border-red-400/30"></div>
+                  <div className="w-80 h-80 rounded-full border-2 border-teal-400/30"></div>
                 </div>
-                
                 {/* Main image with enhanced styling */}
                 <img 
                   src={basePath + "uploads/bffd8948-15f5-4d83-958e-abad6866dc64.png"}
                   alt="Segway Ninebot ZT3 Pro"
-                  className="relative z-10 h-80 object-contain border-4 border-red-500 rounded-2xl bg-gray-800/50 backdrop-blur-sm p-4 shadow-2xl shadow-red-500/20"
+                  className="relative z-10 h-80 object-contain border-4 border-indigo-500 rounded-2xl bg-slate-800/50 backdrop-blur-sm p-4 shadow-2xl shadow-indigo-500/20"
                 />
-                
                 {/* Decorative corner elements */}
-                <div className="absolute top-4 left-4 w-6 h-6 border-l-4 border-t-4 border-red-400"></div>
-                <div className="absolute top-4 right-4 w-6 h-6 border-r-4 border-t-4 border-red-400"></div>
-                <div className="absolute bottom-4 left-4 w-6 h-6 border-l-4 border-b-4 border-red-400"></div>
-                <div className="absolute bottom-4 right-4 w-6 h-6 border-r-4 border-b-4 border-red-400"></div>
+                <div className="absolute top-4 left-4 w-6 h-6 border-l-4 border-t-4 border-teal-400"></div>
+                <div className="absolute top-4 right-4 w-6 h-6 border-r-4 border-t-4 border-teal-400"></div>
+                <div className="absolute bottom-4 left-4 w-6 h-6 border-l-4 border-b-4 border-teal-400"></div>
+                <div className="absolute bottom-4 right-4 w-6 h-6 border-r-4 border-b-4 border-teal-400"></div>
               </div>
             </div>
           </div>
-          
-          <h1 className="text-7xl font-bold mb-6 text-white">
+          <h1 className="text-7xl font-bold mb-6 text-slate-100">
             Нужны ли права на мой самокат?
           </h1>
-          <h2 className="text-4xl font-semibold mb-6 text-red-500">
+          <h2 className="text-4xl font-semibold mb-6 text-indigo-400">
             Segway Ninebot ZT3 Pro
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
             Подробный разбор правового статуса электросамоката с максимальной конструктивной скоростью 25 км/ч согласно российскому законодательству
           </p>
         </div>
 
         {/* Quick Answer */}
-        <Card className="mb-12 border-2 border-green-500 bg-gray-800/50 backdrop-blur-sm shadow-2xl shadow-green-500/20">
+        <Card className="mb-12 border-2 border-emerald-500 bg-slate-800/50 backdrop-blur-sm shadow-2xl shadow-emerald-500/20">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-green-400 text-2xl">
+            <CardTitle className="flex items-center gap-3 text-emerald-400 text-2xl">
               <CheckCircle className="h-8 w-8" />
               Краткий ответ
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-xl font-semibold text-green-300">
+            <p className="text-xl font-semibold text-emerald-300">
               НЕТ, права НЕ нужны! Этот Segway Ninebot ZT3 Pro является СИМ (Средством Индивидуальной Мобильности) согласно российскому законодательству.
             </p>
           </CardContent>
